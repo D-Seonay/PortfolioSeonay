@@ -1,0 +1,12 @@
+{
+  "name": "my-portfolio",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "functions-framework --target=helloHttp",
+    "build": "sass ./src/scss/styles.scss ./styles.css",
+    "build:watch": "sass --watch ./src/scss/styles.scss ./src/scss/styles.css"
+  },
+  "dependencies": {
+    "node": "^20.5.1"
+  }
+}
