@@ -125,7 +125,7 @@ main-contentsection.section {
   position: relative;
 }
 .section .header--left-content__image {
-  border-radius: var(--br-sm-2);
+  border-radius: 20%;
   width: 80%;
   flex-shrink: 0;
   filter: grayscale(100%);
