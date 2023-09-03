@@ -5,6 +5,7 @@
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-decoration: none;
+  color: var(--color-white);
 }
 
 :root {
@@ -14,11 +15,12 @@
   --color-black: #000;
   --color-grey0: #F8F8F8;
   --color-grey2: #B2B2CD;
-  --color-grey3: #6c7983;
-  --color-grey4: #454e56;
-  --color-grey5: #2a2e35;
-  --color-grey6: #12181b;
-  --color-grey7: #D9D9D9;
+  --color-grey3: #B3BBC3;
+  --color-grey4: #6c7983;
+  --color-grey5: #454e56;
+  --color-grey6: #2a2e35;
+  --color-grey7: #12181b;
+  --color-grey8: #D9D9D9;
   --color-hover: #4169E1FF;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
@@ -46,7 +48,7 @@ body {
 }
 
 header {
-  height: 7.625rem;
+  height: 5rem;
   width: 100%;
   overflow: hidden;
   background-color: var(--color-primary);
@@ -130,6 +132,7 @@ main-contentsection.section {
   transition: filter 0.3s ease-in-out;
   -o-object-fit: cover;
   object-fit: cover;
+  margin: 10% 0 10% 0;
 }
 .section .header--left-content__image:hover {
   filter: grayscale(0);
@@ -140,8 +143,8 @@ main-contentsection.section {
   justify-content: center;
 }
 .section .header--right-content__text {
-  font-size: 3rem;
-  color: var(--color-grey2);
+  font-size: 4rem;
+  color: var(--color-grey3);
   text-align: left;
   margin-bottom: 15px;
 }
@@ -155,6 +158,7 @@ main-contentsection.section {
 .section .header--right-content__contact-button {
   display: flex;
   align-self: flex-start;
+  font-size: 2rem;
 }
 .section .header--right-content__contact-button__text {
   padding: 0 2rem;
@@ -168,9 +172,47 @@ main-contentsection.section {
   padding: 1rem;
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  margin: 0 7% 0 7%;
+}
+.about-container--left-about {
+  padding-right: 5rem;
+}
+.about-container--left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey3);
+}
+.about-container--left-about__title {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.about-container--left-about__contact-button {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+.about-container--left-about__contact-button__text {
+  padding: 0 2rem;
+}
+.about-container--left-about__contact-button__icon {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
 /*Independed components*/
 .main-btn {
-  border-radius: 30px;
+  border-radius: 50px;
   color: var(--color-white);
   font-weight: 600;
   position: relative;

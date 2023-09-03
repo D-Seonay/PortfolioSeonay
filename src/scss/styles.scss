@@ -5,6 +5,7 @@
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-decoration: none;
+  color: var(--color-white);
 }
 
 :root {
@@ -14,11 +15,12 @@
   --color-black: #000;
   --color-grey0: #F8F8F8;
   --color-grey2: #B2B2CD;
-  --color-grey3: #6c7983;
-  --color-grey4: #454e56;
-  --color-grey5: #2a2e35;
-  --color-grey6: #12181b;
-  --color-grey7: #D9D9D9;
+  --color-grey3: #B3BBC3;
+  --color-grey4: #6c7983;
+  --color-grey5: #454e56;
+  --color-grey6: #2a2e35;
+  --color-grey7: #12181b;
+  --color-grey8: #D9D9D9;
   --color-hover: #4169E1FF;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
@@ -45,7 +47,7 @@ body {
   background-color: var(--color-primary);
   }
 header{
-  height: 7.625rem;
+  height: 5rem;
   width: 100%;
   overflow: hidden;
   background-color: var(--color-primary);
@@ -129,6 +131,7 @@ main-content{
          transition: filter 0.3s ease-in-out;
          -o-object-fit: cover;
          object-fit: cover;
+         margin: 10% 0 10% 0;
          &:hover {
            filter: grayscale(0);
          }
@@ -139,8 +142,8 @@ main-content{
        flex-direction: column;
        justify-content: center;
        &__text {
-         font-size: 3rem;
-         color: var(--color-grey2);
+         font-size: 4rem;
+         color: var(--color-grey3);
          text-align: left;
          margin-bottom: 15px;
          & span {
@@ -155,6 +158,7 @@ main-content{
        &__contact-button {
          display: flex;
          align-self: flex-start;
+         font-size: 2rem;
          &__text {
            padding: 0 2rem;
          }
@@ -170,10 +174,49 @@ main-content{
      }
   }
 }
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  margin: 0 7% 0 7%;
+  &--left-about {
+    padding-right: 5rem;
+    & p {
+      line-height: 2rem;
+      padding: 1rem;
+      color: var(--color-grey3);
+    }
+    &__title {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    &__contact-button {
+      display: flex;
+      align-self: flex-start;
+      justify-content: flex-end;
+      &__text {
+        padding: 0 2rem;
+      }
+      &__icon {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
 /*Independed components*/
 
 .main-btn {
-  border-radius: 30px;
+  border-radius: 50px;
   color: var(--color-white);
   font-weight: 600;
   position: relative;
