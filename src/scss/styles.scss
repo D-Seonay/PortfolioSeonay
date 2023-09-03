@@ -92,6 +92,7 @@ header{
             color: var(--color-hover);
             text-decoration: underline var(--color-hover) 2px;
             text-shadow: none;
+
           }
         }
       }
@@ -142,7 +143,7 @@ main-content{
        flex-direction: column;
        justify-content: center;
        &__text {
-         font-size: 4rem;
+         font-size: 3.5rem;
          color: var(--color-grey3);
          text-align: left;
          margin-bottom: 15px;
@@ -158,7 +159,7 @@ main-content{
        &__contact-button {
          display: flex;
          align-self: flex-start;
-         font-size: 2rem;
+         font-size: 1.5rem;
          &__text {
            padding: 0 2rem;
          }
@@ -231,6 +232,24 @@ main-content{
 
   &:hover {
     box-shadow: var(--box-shadow-2);
+    transform: scale(0.95);
   }
 
+}
+.anchor-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: 0.7s ease;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+  &:hover{
+    box-shadow: var(--box-shadow-1);
+    transform: scale(0.95);
+
+  }
 }
