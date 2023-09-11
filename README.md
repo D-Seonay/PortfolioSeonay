@@ -9,4 +9,6 @@ Finally, the last page is a contact page.
 
 ### With which technology
 To realize this project, I used a Figma feed created before the design.
+If you want, you can see my design with this link: **[Figma Portfolio](https://www.figma.com/file/1AuA6qTdz7uebIxE6pAFza/PortfolioV4?type=design&node-id=105%3A777&mode=design&t=1ZhOQUoUT1HU7qUN-1)**
+
 The technologies used are HTML, SCSS and JS.
